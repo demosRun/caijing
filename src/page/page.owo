@@ -161,6 +161,20 @@
   .w1000
     plug(_name="title2" _src="./src/moudle/title2.owo" _text="VLOG看两会")
     plug(_name="module141" _src="https://template.owo.ink/dd34f42b0698caf4.owo")
+
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="视频")
+    .video-box
+
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="新闻列表")
+    .news-list-2.w1000.clear
+      .item.fl
+        plug(_name="title1" _src="./src/moudle/title1.owo")
+        plug(_name="module40" _src="https://template.owo.ink/d59b03d1e92caecf.owo")
+      .item.fr
+        plug(_name="title1" _src="./src/moudle/title1.owo")
+        plug(_name="module40" _src="https://template.owo.ink/d59b03d1e92caecf.owo")
+  
+  plug(_name="module2" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
 </template>
 
 <script>
@@ -406,5 +420,9 @@
   background-image: url('@|img-bg.jpg|');
   background-size: 1920px auto;
   background-position: center;
+}
+.video-box {
+  width: 1000px;
+  height: 525px;
 }
 </style>
