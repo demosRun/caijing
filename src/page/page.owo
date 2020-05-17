@@ -1,16 +1,410 @@
 <template lang="pug">
 .home
+  plug(_name="module98" _src="https://template.owo.ink/d998fae6830db2ac.owo")
+  //- 题图
+  img.main-image(src="@|bg.jpg|")
+  //- 导航栏
+  plug(_name="module166" _src="https://template.owo.ink/3462042c417aaad1.owo")
+  //- 主标题
+  plug(_name="module39" _src="https://template.owo.ink/b942436249b3162a.owo")
+  .w1000.main-news.clear
+    .line
+    .left.fl
+      plug(_name="module12" _src="https://template.owo.ink/c0259ac23371dd9a.owo")
+    .right.fr
+      h2 国务院总理李克强答记者问答记者问答记
+      p 如何准确理解把握习总书记重要讲话的精神内涵？如何使主题教育活动落实更有实效？中央党史和文献研究院研究员黄一兵对习近平重要讲话内容进行的解读。
+      .line
+      plug(_name="module40" _src="https://template.owo.ink/d59b03d1e92caecf.owo")
+      .info-card.clear
+        span 供给侧结构性改革
+        span 简政放权
+        span 脱贫攻坚
+        span 创业创新
+        span 房价调控
+        span 城乡协调发展
+  .h30
+  .news-list-2.w1000.clear
+    .item.fl
+      plug(_name="title1" _src="./src/moudle/title1.owo")
+      plug(_name="module40" _src="https://template.owo.ink/d59b03d1e92caecf.owo")
+    .item.fr
+      plug(_name="title1" _src="./src/moudle/title1.owo")
+      plug(_name="module40" _src="https://template.owo.ink/d59b03d1e92caecf.owo")
+  //- 政府工作报告
+  plug.w1000(_name="title2" _src="./src/moudle/title2.owo" _text="政府工作报告")
+  .w1000.show-box
+    ul.edit
+      li
+        h2 2019年工作回顾1
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+      li
+        h2 2019年工作回顾2
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+      li
+        h2 2019年工作回顾3
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+      li
+        h2 2019年工作回顾4
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+      li
+        h2 2019年工作回顾5
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+      li
+        h2 2019年工作回顾6
+        .text
+          p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+          p 去年以来，国内的房地产市场正式告别了“黄金时代”，无论从二三线城市，还是北上广深，成交量的大幅降低，库存的激增，都给房地产市场笼罩了一层阴云。
+          p 国家统计局数据显示，2014年全国房地产开发投资达95036亿元，相比2013年回落9.3个百分点，商品房销售面积达12.06亿平方米，比上年下降7.6%。
+          p 按捺不住的不仅是开发商，严重依赖房地产发展的地方政府也跟着上火，取消限购，买房送户口，提高公积金贷款……可以说地方政府想尽办法，但效果依然不明显，二三线城市的房价每况愈下。
+    .menu-list
+    .show-item
+  .w1000
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="人民会客厅")
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="对策")
+    .duice.clear
+      plug.fl(_name="cardShow" _src="./src/moudle/cardShow.owo" _text="政府工作报告")
+      plug.fr(_name="cardShow" _src="./src/moudle/cardShow.owo" _text="政府工作报告")
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="金台圆桌")
+    .jtyz.clear
+      .left.fl
+        plug(_name="module12" _src="https://template.owo.ink/fce521f66eba0f5b.owo")
+      .right.fr
+        h2
+          a(href="#" target="_blank") 主要标题主要标题
+        p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+        h2
+          a(href="#" target="_blank") 主要标题主要标题
+        p 两会期间，房价再次成为代表委员们热议的话题，不动产登记，房贷宽松政策，房产税等多项政策备受关注。
+        .line
+        ul.clear
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+          li
+            a(href="#" target="_blank") 房贷宽松政策，房产税等多项政策备受关注。
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="两会图解")
+    plug(_name="module149" _src="https://template.owo.ink/0e446b29a4c2649b.owo")
+
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="对话企业家")
+    ul.dhqyj.clear
+      li
+        a(href="#" target="_blank")
+          img(src="@|people.png|")
+          h1 张茅
+          p 国家工商行政管理总局党组书记、局长
+      li
+        a(href="#" target="_blank")
+          img(src="@|people.png|")
+          h1 张茅
+          p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+      li
+        img(src="@|people.png|")
+        h1 张茅
+        p 国家工商行政管理总局党组书记、局长
+    
+  plug.w1000(_name="title2" _src="./src/moudle/title2.owo" _text="5G随手拍")
+  .ssp
+    plug.w1000(_name="module148" _src="https://template.owo.ink/54c09bca4ff53548.owo")
+  
+  .w1000
+    plug(_name="title2" _src="./src/moudle/title2.owo" _text="VLOG看两会")
+    plug(_name="module141" _src="https://template.owo.ink/dd34f42b0698caf4.owo")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-
+      // 生成工作回顾
+      const workList = this.queryAll('.show-box .edit li')
+      let listHtml = ``
+      for (let index = 0; index < workList.length; index++) {
+        const element = workList[index];
+        listHtml += `<div class="list-item" o-tap="showWorkIndex(${index})">${index + 1}</div>`
+      }
+      this.query('.menu-list').innerHTML = listHtml
+      
+      // 默认显示第一项
+      this.showWorkIndex(0)
+      setTimeout(() => {
+        this.handleEvent(this.query('.menu-list'))
+      }, 0);
+    },
+    showWorkIndex: function (index) {
+      const workList = this.queryAll('.show-box .edit li')
+      if (workList[index]) {
+        this.query('.show-box .show-item').innerHTML = workList[index].innerHTML
+        setTimeout(() => {
+          const temp = this.queryAll('.show-box .list-item')
+          for (let index = 0; index < temp.length; index++) {
+            const element = temp[index];
+            element.classList.remove('active')
+          }
+          temp[index].classList.add('active')
+        }, 0);
+      }
     }
   }
 </script>
 
 
 <style lang="less">
+.main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.news-head {
+  margin-top: 20px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #e0e0e0;
+  margin: 20px auto;
+}
+.main-news {
+  .right {
+    width: 450px;
+    h2 {
+      color: #333333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .news-list {
+      height: 150px;
+      overflow: hidden;
+    }
+    p {
+      line-height: 1.7;
+      text-indent: 2em;
+      color: #333333;
+    }
+    .line {
+      margin: 5px auto;
+    }
+    li {
+      height: 30px;
+      line-height: 30px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .info-card {
+    margin-top: 4px;
+    span {
+      display: block;
+      float: left;
+      background-color: red;
+      line-height: 40px;
+      height: 40px;
+      color: white;
+      padding: 0 10px;
+      margin: 1px 0;
+      margin-right: 2px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}
+.news-list-2 {
+  .item {
+    width: 470px;
+  }
+  li {
+    line-height: 34px;
+    height: 34px;
+    font-size: 20px;
+    a {
+      font-size: 18px;
+    }
+  }
+  .ds2548a {
+    margin-bottom: 10px;
+  }
+}
+.edit {
+  display: none;
+}
+.show-box {
+  .show-item {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 781px;
+    height: 509px;
+    position: relative;
+    background-image: url('@|show-box.png|');
+  }
+  .menu-list {
+    position: absolute;
+    left: 800px;
+    top: 30px;
+    height: 440px;
+    width: 180px;
+    .list-item {
+      background-color: #ffe096;
+      line-height: 50px;
+      width: 110px;
+      margin-bottom: 20px;
+      text-align: right;
+      font-size: 30px;
+      padding-right: 20px;
+      color: #c38118;
+      cursor: pointer;
+      transition: width 0.6s;
+    }
+    .active {
+      background-color: #b7252f;
+      color: white;
+      width: 130px;
+    }
+  }
+  h2 {
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+  }
+  .text {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    font-size: 16px;
+    line-height: 1.7;
+    height: 300px;
+    overflow: auto;
+    p {
+      text-indent: 2em;
+    }
+  }
+}
+.jtyz {
+  .right {
+    width: 570px;
+  }
+  a {
+    color: black;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  p, p a {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #666666;
+  }
+  a:hover {
+    color: #c00;
+    text-decoration: none;
+  }
+  .line {
+    margin: 10px auto;
+  }
+  ul li {
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    width: 48%;
+    padding-right: 2%;
+    overflow: hidden;
+  }
+}
 
+.dhqyj {
+  li {
+    float: left;
+    background-color: #f6ece1;
+    width: 180px;
+    margin: 25px;
+    padding: 25px 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 65px;
+      width: 130px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 40px;
+      color: black;
+    }
+    p {
+      height: 40px;
+      line-height: 20px;
+      text-align: center;
+      color: #c17e14;
+    }
+  }
+}
+.ssp {
+  margin: 0 auto;
+  background-image: url('@|img-bg.jpg|');
+  background-size: 1920px auto;
+  background-position: center;
+}
 </style>

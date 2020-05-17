@@ -1,0 +1,35 @@
+<template lang="pug">
+.card-show-41sd.clear
+  img.left(src="@|show-1.png|")
+  .right
+    h2 “砥砺奋进的五年”报告
+    p 邀请中央组织部副部长姜信治作了“坚定不移推进全面从严治党，确保党始终成为中国特色社会主义事业的坚强领导核心”的专题报告<a target="_blank" href="#">[详细]</a>
+</template>
+
+<style lang="less">
+.card-show-41sd {
+  width: 440px;
+}
+.left {
+  float: left;
+  width: 207px;
+  height: auto;
+}
+.right {
+  float: right;
+  width: 220px;
+  h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  p {
+    line-height: 1.7;
+    text-indent: 2em;
+    color: #666666;
+    font-size: 13px;
+  }
+  a {
+    color: #e8191d;
+  }
+}
+</style>

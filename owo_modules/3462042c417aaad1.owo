@@ -1,0 +1,54 @@
+<template>
+  <nav>
+    <a target="_blank" :for="data._itemLiat" href="{value.url}">{value.name}</a>
+  </nav>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      _itemLiat: [
+        {"url":"http://www.people.com.cn/","name":"人民财经"},
+        {"url":"http://www.people.com.cn/","name":"人民会客厅"},
+        {"url":"http://www.people.com.cn/","name":"对策"},
+        {"url":"http://www.people.com.cn/","name":"金台圆桌"},
+        {"url":"http://www.people.com.cn/","name":"图解两会"},
+        {"url":"http://www.people.com.cn/","name":"对话企业家"},
+      ]
+    }
+  }
+</script>
+
+<style lang="less">
+nav {
+  width: 100%;
+  font-size: 18px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #bd1d0f;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffe096;
+    text-decoration: none;
+  }
+
+}
+a {
+  color: white;
+  display: inline-block;
+  margin: 10px 0;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 22px;
+  padding: 0 25px;
+  border-left: 2px solid #9f1a0e;
+}
+a:nth-child(1) {
+  border-left: none;
+}
+</style>

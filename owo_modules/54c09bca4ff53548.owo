@@ -1,0 +1,176 @@
+<template>
+  <div class="swiper-container-p2" :mouseenter="stop" :mouseleave="start"> 
+    <div class="swiper-wrapper"> 
+      <div class="swiper-slide">
+        <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0620/MAIN201906202020493087485176183.jpg" width="1000" height="530" alt="" /></a>
+        <div class="text">
+          <h2>1标题标题标题标题标题标题标题</h2>
+          <p>中乌“合作—2019”联合反恐演练圆满结束</p>
+        </div>
+      </div> 
+      <div class="swiper-slide">
+        <a href="#" target="_blank">
+          <img src="http://www.people.com.cn/NMediaFile/2019/0620/MAIN201906202025094971392065777.jpg" width="1000" height="530" alt="" />
+        </a>
+        <div class="text">
+          <h2>2标题标题标题标题标题标题标题</h2>
+          <p>中乌“合作—2019”联合反恐演练圆满结束</p>
+        </div>
+      </div> 
+      <div class="swiper-slide">
+        <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0619/MAIN201906191838270226271022901.jpg" width="1000" height="530" alt="" /></a>
+        <div class="text">
+          <h2>3标题标题标题标题标题标题标题</h2>
+          <p>中乌“合作—2019”联合反恐演练圆满结束</p>
+        </div>
+      </div> 
+    </div>
+    <div class="prev" o-tap="prev"></div> 
+    <div class="next" o-tap="next"></div>
+    <div class="info-box">
+      <i><em class="thisp">1</em>/<em class="allp"></em></i>
+      <div class="text"></div>
+    </div>
+  </div> 
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      // 初始化
+      const activeText = this.query('.swiper-slide .text') ? this.query('.swiper-slide .text').innerHTML : ''
+      console.log(activeText)
+      this.query('.info-box .text').innerHTML = activeText      
+      this.$el.getElementsByClassName('allp')[0].innerText = this.$el.getElementsByClassName('swiper-slide').length
+      setTimeout(() => {
+        this.data.swiper = new Swiper(this.$el, {
+          mode: 'horizontal',
+          autoplay: 5000,
+          autoplayDisableOnInteraction: false,
+          loop: true,
+          slidesPerView: 1,
+          mousewheelControl: false,
+          onSlideChangeStart: (swiper) => {
+            const activeItem = swiper.activeSlide()
+            const activeText = activeItem.getElementsByClassName('text')[0] ? activeItem.getElementsByClassName('text')[0].innerHTML : ''
+            const activeIndex = (swiper.activeLoopIndex != undefined ? swiper.activeLoopIndex : swiper.realIndex) + 1
+            this.$el.getElementsByClassName('thisp')[0].innerText = activeIndex
+            this.query('.info-box .text').innerHTML = activeText
+          }
+        })
+      }, 0)
+    },
+    stop: function () {
+      this.data.swiper.stopAutoplay()
+    },
+    start: function () {
+      this.data.swiper.startAutoplay()
+    },
+    prev: function () {
+      this.data.swiper.swipePrev ? this.data.swiper.swipePrev(): this.data.swiper.slidePrev()
+    },
+    next: function () {
+      this.data.swiper.swipeNext ? this.data.swiper.swipeNext() : this.data.swiper.slideNext()
+    }
+  }
+</script>
+
+<style lang="less">
+.swiper-container-p2 {
+  position: relative;
+  width: 1000px;
+  height: 530px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.swiper-slide {
+  width: 1000px;
+  height: 530px;
+  position: relative;
+  a {
+    display: block;
+  }
+}
+
+.swiper-slide .text {
+  display: none;
+}
+
+.prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-pagination1 {
+  display: none;
+}
+
+.info-box {
+  position: absolute;
+  bottom: -10px;
+  background-color: #bd1d0f;
+  width: 600px;
+  height: 65px;
+  left: 30px;
+  right: 0;
+  margin: auto;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    position: absolute;
+    left: 0;
+    background-color: #ffe096;
+    padding: 5px 15px;
+    left: -30px;
+    color: #bd1d0f;
+    font-weight: bold;
+  }
+}
+.text {
+  width: 450px;
+  h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+</style>

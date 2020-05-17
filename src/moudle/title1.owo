@@ -1,0 +1,26 @@
+<template lang="pug">
+.ds2548a
+  span 小标题
+  a(href="#" target="_blank") 更多
+</template>
+
+<style lang="less">
+.ds2548a {
+  position: relative;
+  span {
+    font-size: 26px;
+    color: #c8171d;
+    font-weight: bold;
+  }
+  a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+</style>

@@ -1,0 +1,33 @@
+<template lang="pug">
+.ds2548b
+  span {{prop._text}}
+  a(href="#" target="_blank") 更多
+</template>
+
+<style lang="less">
+.ds2548b {
+  position: relative;
+  background-image: url('@|title1.jpg|');
+  height: 120px;
+  margin: 20px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  span {
+    font-size: 26px;
+    color: #333333;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    font-weight: bold;
+  }
+  a {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    margin: auto;
+    height: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+</style>
